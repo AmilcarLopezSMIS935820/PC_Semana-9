@@ -78,7 +78,7 @@ conexion.commit() #Confirmando el ingreso de los datos...
 
 
 #Consultando datos
-lista = conexion.execute("select id_persona, nombre, apellido, edad, sexo, telefono, direccion, vacunas from vacunas ORDER BY id_persona ASC")
+lista = conexion.execute("SELECT id_persona, nombre, apellido, edad, sexo, telefono, direccion, vacunas FROM vacunas ORDER BY id_persona ASC")
 
 for row in lista:
     print("ID_Persona = ", row[0])
